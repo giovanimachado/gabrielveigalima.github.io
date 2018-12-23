@@ -1,162 +1,187 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+    <meta name="author" content="Gabriel Veiga Lima">
 
-    <title>Página de produtos, usando Bootstrap.</title>
+    <title>Portfólio - Gabriel Veiga Lima</title>
+    <link rel="icon" href="img/logo.png" sizes="192x192" />
 
-    <!-- Principal CSS do Bootstrap -->
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
 
-    <!-- Estilos customizados para esse template -->
-    <link href="css/product.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
   </head>
 
-  <body>
-
-    <nav class="site-header sticky-top py-1">
-      <div class="container d-flex flex-column flex-md-row justify-content-between">
-        <a class="py-2" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
-        </a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Tour</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Produto</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Features</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Premium</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Suporte</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Preços</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Carrinho</a>
+  <body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Início</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contatos</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-      <div class="media">
-        <img class="img-fluid align-self-start mr-1 rounded float-left" src="https://avatars3.githubusercontent.com/u/27972235?s=460&v=4" alt="Imagem de exemplo genérica">
-        <div class="media-body">
-          <h5 class="mt-0">Mídia alinhada ao topo</h5>
-          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-          <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong>Tire sua ideia do papel</strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5">Vivemos em um mundo cada vez mais conectado, por isso você não deve ficar para trás.</p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Veja Mais</a>
+          </div>
         </div>
       </div>
-      <div class="col-md-5 p-lg-5 mx-auto my-5">        
-        <h1 class="display-4 font-weight-normal">Título legal</h1>
-        <p class="lead font-weight-normal">E uma descrição engraçadinha, para continuar. Alavanque seus esforços em marketing com esse exemplo, baseado nas páginas de marketing da Apple.</p>
-        <a class="btn btn-outline-secondary" href="#">Em breve</a>
-      </div>
-      <div class="product-device shadow-sm d-none d-md-block"></div>
-      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-    </div>
+    </header>
 
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-        <div class="my-3 py-3">
-          <h2 class="display-5">Mande sua mensagem</h2>
-          <form>
-            <div class="form-group row">
-              <label for="inputEmail3" class="col-sm-2 col-form-label">Nome</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputEmail3" placeholder="Nome">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-
-              <div class="col-sm-10">
-                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="inputPassword3" class="col-sm-2 col-form-label">Assunto</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputPassword3" placeholder="Assunto">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="inputPassword3" class="col-sm-2 col-form-label">Mensagem</label>
-              <div class="col-sm-10">
-                <textarea  class="form-control"  placeholder="Mensagem">
-                </textarea>
-              </div>
-            </div>
-            
-            <div class="form-group row">
-              <div class="col-sm-10">
-                <button type="submit" class="btn btn-primary">Entrar</button>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-      </div>
-    </div>
-
-    <footer class="container py-5">
-      <div class="row">
-        <div class="col-12 col-md">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
-          <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Features</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Algo legal</a></li>
-            <li><a class="text-muted" href="#">Feature aleatória</a></li>
-            <li><a class="text-muted" href="#">Recursos para times</a></li>
-            <li><a class="text-muted" href="#">Coisas para desenvolvedores</a></li>
-            <li><a class="text-muted" href="#">Outra coisa legal</a></li>
-            <li><a class="text-muted" href="#">Último item</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Fontes</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Fonte</a></li>
-            <li><a class="text-muted" href="#">Nome da fonte</a></li>
-            <li><a class="text-muted" href="#">Outra fonte</a></li>
-            <li><a class="text-muted" href="#">Fonte final</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Fontes</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Negócios</a></li>
-            <li><a class="text-muted" href="#">Educação</a></li>
-            <li><a class="text-muted" href="#">Governo</a></li>
-            <li><a class="text-muted" href="#">Jogos</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Sobre</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Equipe</a></li>
-            <li><a class="text-muted" href="#">Locais</a></li>
-            <li><a class="text-muted" href="#">Privacidade</a></li>
-            <li><a class="text-muted" href="#">Termos</a></li>
-          </ul>
+    <section class="bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">Tenho o que você precisa!</h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4">A <a class="text-white" href="http://tomorrowsintelligence.com/"> Tomorrow's Inteligence</a> é especializada em desenvolver tecnologia para a sua necessidade.</p>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Veja os Serviços</a>
+          </div>
         </div>
       </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Serviços</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fas fa-4x fa-robot text-primary mb-3 sr-icon-1"></i>
+              <h3 class="mb-3">Robôs</h3>
+              <p class="text-muted mb-0">Desenvolvendo software que ultizam inteligência artificial.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fas fa-4x fa-mobile text-primary mb-3 sr-icon-2"></i>
+              <h3 class="mb-3">Aplicativos</h3>
+              <p class="text-muted mb-0">Aplicativos Mobile Multiplataforma (Android/IOS)</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fas fa-4x fa-code text-primary mb-3 sr-icon-3"></i>
+              <h3 class="mb-3">Site</h3>
+              <p class="text-muted mb-0">Criamos sites com design responsivo com melhor usabilidade em todos dispositivos.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fas fa-4x fa-desktop text-primary mb-3 sr-icon-4"></i>
+              <h3 class="mb-3">Desktop</h3>
+              <p class="text-muted mb-0">Desenvolvemos software para o seu computador</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="bg-dark text-white">
+      <div class="container text-center">
+        <h2 class="mb-4">Sobre mim</h2>
+        <br>
+        <div class="col-lg-4 mx-auto float-left">
+          <img class="img-fluid my_photo mr-4 rounded float-left" src="https://avatars3.githubusercontent.com/u/27972235?s=460&amp;v=4" alt="Minha Foto"><br>
+        </div>
+        <div class="col-lg-8 mx-auto text-justify">
+          <p class="text-muted mb-4 text-white">Sou desenvolvedor de software e empreendedor, fundei a <a class="text-white" href="http://tomorrowsintelligence.com/"> Tomorrow's Inteligence</a>.<br> Formei como Tecnico em Informática - Senac e estou cursando Sistemas de Informção - Estácio.<br>
+          Trabalho com desenvolvimento alguns anos e agora estou atuando em Data Science, voltado para Machine Learning.</p><br>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Entrar em contato!</h2>
+            <hr class="my-4">
+            <p class="mb-5">Pronto para começar seu próximo projeto? Isso é ótimo! Pode entrar em contatos pelas redes ou pelo site da Tomorrow's Intelligence!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <a href="https://www.linkedin.com/in/gabriel-veiga-lima/" target="_blank">
+              <img width="80" class="img-fluid" src="img/linkedin.png">
+              <p>gabriel-veiga-lima</p>
+            </a>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <a href="https://github.com/gabrielveigalima" target="_blank">
+              <img width="80" src="img/github-logo.png">
+              <p>gabrielveigalima</p>
+            </a>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <a href="http://tomorrowsintelligence.com/contatos" target="_blank">
+              <img width="80" src="http://tomorrowsintelligence.com/wp-content/uploads/2018/04/cropped-LOGO-LETRA-PRETA-PNG-1.png">
+              <p>Tomorrow's Intelligence</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p class="text-center" >© 2019 - Todos os diretos reservados.</p>
     </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-    <!-- Principal JavaScript do Bootstrap
-    ================================================== -->
-    <!-- Foi colocado no final para a página carregar mais rápido -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="js/vendor/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/vendor/holder.min.js"></script>
-    <script>
-      Holder.addTheme('thumb', {
-        bg: '#55595c',
-        fg: '#eceeef',
-        text: 'Thumbnail'
-      });
-    </script>
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
   </body>
+
 </html>
